@@ -27,8 +27,6 @@
 #ifndef RNN_H_
 #define RNN_H_
 
-#include "rnnoise.h"
-
 #include "opus_types.h"
 
 #define WEIGHTS_SCALE (1.f/256)
@@ -66,4 +64,4 @@ void compute_gru(const GRULayer *gru, float *state, const float *input);
 
 void compute_rnn(RNNState *rnn, float *gains, float *vad, const float *input);
 
-#endif /* RNN_H_ */
+#endif /* _MLP_H_ */
